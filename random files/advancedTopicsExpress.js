@@ -40,6 +40,10 @@ app.get('/', (req, res) =>{
   res.send("Connected.")
 });
 
+//Retorna a variável de ambiente, que no caso ainda não foi setada. (Undefined)
+console.log(`Node_ENV: ${process.env.NODE_ENV}`);
+//Por padrão, o node seta a variável de ambiente para Undefined.
+console.log(`Express ENV: ${app.get('env')}`)
 
 //Inicializa o server na porta 3000.
 const port = process.env.PORT || 3000;
