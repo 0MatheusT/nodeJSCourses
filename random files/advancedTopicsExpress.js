@@ -35,6 +35,10 @@ app.use(function(req, res, next) {
 app.use(importedMiddlware);
 
 
+//Rota raiz
+app.get('/', (req, res) =>{
+  res.send("Connected.")
+});
 
 
 //Inicializa o server na porta 3000.
