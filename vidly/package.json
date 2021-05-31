@@ -1,0 +1,23 @@
+{
+  "name": "vidly",
+  "version": "1.0.0",
+  "description": "API to movies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0MatheusT/nodeJSCourses.git"
+  },
+  "author": "Matheus Tavares",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0MatheusT/nodeJSCourses/issues"
+  },
+  "homepage": "https://github.com/0MatheusT/nodeJSCourses#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "joi": "^17.4.0"
+  }
+}
