@@ -36,7 +36,7 @@ if (app.get('env') === 'development') {
 //Aqui está nosso middleware customizado.
 //O param next, na função, significa o próximo middleware direcionável.
 app.use(function(req, res, next) {
-  console.log("Logging...")
+  console.log("Logging...") 
 
   next(); // Chama o próximo middlware do pípeline, se não colocar next... a função para nesse middleware.
 });
