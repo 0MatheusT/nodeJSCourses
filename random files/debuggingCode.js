@@ -1,6 +1,8 @@
 //A custom middleware function
+
 const startupDebugger = require('debug')('app:startup'); //import do debugger
 const dbDebugger = require('debug')('app:db'); //import do debugger
+
 const morgan = require('morgan') // Log no console
 const express = require('express');
 const app = express();
@@ -21,4 +23,4 @@ dbDebugger("Connected to Database...")
 
 //Inicializa o server na porta 3000.
 const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`Listening on port ${port}...`));""
+app.listen(port, () => console.log(`Listening on port ${port}...`));
